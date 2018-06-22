@@ -7,8 +7,26 @@ ingredients = [
 ]
 
 def sandwich_request(ingredients, order) 
-  # your code here!
+  toppings = [
+    ["rye", "sourdough", "baguette"],
+    ["ham", "salami", "turkey"],
+    ["swiss", "munster", "cheddar"],
+    ["mayo", "mustard", "tabasco"]
+    ]
+
+if ingredients == "rye" || "sourdough" || "baguette" || "ham" || "salami" || "turkey" || "swiss" || "munster" || "cheddar" || "mayo" || "mustard" || "tabasco"
+    puts "true"
+    
+elsif ingredients ! == "rye" || "sourdough" || "baguette" || "ham" || "salami" || "turkey" ||
+    "swiss" || "munster" || "cheddar" || "mayo" || "mustard" || "tabasco" 
+    puts "false"
+
 end
+
+sandwich_request(ingredients, "pickle")
+
+
+sandwich_request("pickle",order)
 
 # example city_info hash
 cities = {
